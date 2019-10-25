@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--类名-->
+<mapper namespace="org.nzy.lifeservicemanager.dao.AccountMapper">
+    <insert id="insertInto" useGeneratedKeys="true" keyColumn="account_id" keyProperty="accountId">
+        insert into account(account_name,password)
+        values(#{accountName},#{password})
+    </insert>
+
+    <select id="selectByLogIn" resultType="Account">
+        select * from account
+        where account_name=#{accountName} and password=#{password}
+    </select>
+</mapper>

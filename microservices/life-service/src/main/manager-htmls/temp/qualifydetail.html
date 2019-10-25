@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link href="../resources/css/admin/qualifydetail.css" rel="stylesheet">
+    <!--/////////////////////////////////////////////////Amaze UI  CDN//////////////////////////////-->
+    <link href=" http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css" rel="stylesheet">
+    <link href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.ie8polyfill.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.widgets.helper.js"></script>
+    <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.widgets.helper.min.js"></script>
+
+</head>
+<body>
+<h1>审核详情</h1>
+<div class="whole">
+    <button type="button" class="am-btn am-btn-default am-round"><a href="/admin/qualify">返回审核列表</a></button>
+    <div class="am-g">
+        <div class="am-u-sm-4" id="img">
+            <img class="am-thumbnail" src="" alt="图片错误"/>
+        </div>
+    </div>
+    <p class="name">姓名：</p>
+    <p class="idnum">身份证：</p>
+    <p class="age">年龄：</p>
+    <p class="sex">性别：</p>
+    <p class="phone">电话：</p>
+    <p class="degree">学历：</p>
+    <p class="type">服务类型：</p>
+    <p class="experience">工作经验：</p>
+    <p class="area">工作区域：</p>
+    <p class="lastedittime">修改时间：</p>
+    <p class="file">审核文件：</p>
+    <p class="des">描述：</p>
+    <textarea id="message" placeholder="这里填写备注信息"></textarea>
+    <div id="check">
+        <button type="button" id="back" class="am-btn am-btn-danger am-round">不通过</button>
+        <button type="button" id="pass" class="am-btn am-btn-success am-round">去定级</button>
+    </div>
+    <div id="contract">
+        上传合同：<input type="file">
+        <button type="button" id="submit" class="am-btn am-btn-success am-round">提交</button>
+    </div>
+</div>
+<script type="text/javascript" src="../resources/js/superadmin/qualifydetail.js"></script>
+<script type="text/javascript" src="../resources/js/common/util.js"></script>
+</body>
+</html>

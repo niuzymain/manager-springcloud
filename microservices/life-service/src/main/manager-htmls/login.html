@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link href="./resources/css/admin/login.css" rel="stylesheet">
+    <!--///////////////////////////////////////////////////SUI CDN/////////////////////////////////////////////////////-->
+    <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
+
+</head>
+<body>
+<div class="header" id="head">
+    <div class="title">CMS系统</div>
+</div>
+
+<div class="wrap" id="wrap">
+    <div class="logGet">
+        <!-- 头部提示信息 -->
+        <div class="logD logDtip">
+            <p class="p1">登录</p>
+        </div>
+        <!-- 输入框 -->
+        <div class="lgD">
+            <input type="text" placeholder="输入用户名" id="username">
+        </div>
+        <div class="lgD">
+            <input type="password" id="password" placeholder="输入密码">
+        </div>
+        <div class="lgC">
+            <input type="text" id="checkcode" placeholder="验证码">
+            <img id="checkcodeimg" alt="点击更换" title="点击更换" onclick="this.src='http://localhost:9000/manager/login/getkaptcha?d='+new Date()*1"
+                 src="http://localhost:9000/manager/login/getkaptcha"> <!--路由到验证码servlet-->
+        </div>
+        <div class="logC">
+            <a href="#" id="submit" class="sui-btn btn-bordered btn-xlarge btn-primary">登陆</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./resources/js/superadmin/login.js"></script>
+<script type="text/javascript" src="./resources/js/common/util.js"></script>
+</body>
+</html>

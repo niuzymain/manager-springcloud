@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <!--///////////////////////////////////////////////////SUI CDN/////////////////////////////////////////////////////-->
+    <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
+</head>
+<body>
+<h1>确认预约</h1>
+<div id="confirm" class="sui-form form-horizontal" novalidate="novalidate">
+    <div class="control-group">
+        <label for="t-reserve" class="control-label">预约时间：</label>
+        <div class="controls">
+            <input type="date" id="t-reserve">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="t-end" class="control-label">终止时间：</label>
+        <div class="controls">
+            <input type="date" id="t-end">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="contract" class="control-label">预约合同：</label>
+        <div class="controls">
+            <input type="file" id="contract">
+        </div>
+    </div>
+</div>
+<a href="/admin/reserve" class="sui-btn btn-xlarge btn-success" id="back">返回</a>
+<a href="#" class="sui-btn btn-xlarge btn-success" id="submit">提交</a>
+<script type="text/javascript" src="../resources/js/superadmin/confirmpage.js"></script>
+<script type="text/javascript" src="../resources/js/common/util.js"></script>
+
+</body>
+</html>
